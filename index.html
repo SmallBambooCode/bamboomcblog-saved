@@ -1,19 +1,9 @@
 <!doctype html>
-<html>
+<html style='font-size:16px !important'>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-<script>
-        window.onload = function() {
-            var links = document.getElementsByTagName('a');
-            for (var i = 0; i < links.length; i++) {
-                links[i].setAttribute('target', '_blank');
-            }
-        };
-</script>
-<link href='https://fonts.loli.net/css?family=Merriweather:900,900italic,300,300italic&subset=latin-ext' rel='stylesheet' type='text/css' /><link href='https://fonts.loli.net/css?family=Lato:900,300&subset=latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
 .mac-os-11 { --title-bar-height:28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
@@ -212,474 +202,464 @@ mark .md-meta { color: rgb(0, 0, 0); }
 mjx-container { break-inside: avoid; }
 
 
-@include-when-export url(https://fonts.loli.net/css?family=Merriweather:900,900italic,300,300italic&subset=latin-ext);
-@include-when-export url(https://fonts.loli.net/css?family=Lato:900,300&subset=latin-ext);
 
-:root {
-	--control-text-color: #777;
+
+/* Webfont: HKGrotesk-Light *//* Webfont: HKGrotesk-LightItalic *//* Webfont: HKGrotesk-Regular *//* Webfont: HKGrotesk-Italic *//* Webfont: HKGrotesk-Medium *//* Webfont: HKGrotesk-MediumItalic *//* Webfont: HKGrotesk-Bold *//* Webfont: HKGrotesk-BoldItalic *//* Webfont: OfficeCodePro-Light *//* Webfont: OfficeCodePro-LightItalic *//* Webfont: OfficeCodePro-Regular *//* Webfont: OfficeCodePro-Italic *//* Webfont: OfficeCodePro-Bold *//* Webfont: OfficeCodePro-BoldItalic */html {
+    background: #FFFFFF;
+    /* or
+    text-shadow: #fff 0px 1px 1px;*/
+    text-rendering: geometricPrecision; 
 }
 
-/**
- * forked from pixyll.com
- * MIT license
- */
+body {
+    font-family: 'HKGrotesk', sans-serif;
+    font-weight: 300;
+    font-size: 1.275em;
+    letter-spacing: 0px; 
+    color: #333333;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: subpixel-antialiased;
+    /*-webkit-text-stroke: 0.45px;
+    // or*/
+    -webkit-text-stroke: 0.45px rgba(51, 51, 51, 0.97);
+    line-height: 1.6em;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
 
+strong {
+    font-family: 'HKGrotesk', serif; 
+    font-weight: 500;
+    color: #303336;
+} 
+
+em {
+    font-family: 'HKGrotesk', serif; 
+    font-weight: normal; 
+    font-style: italic;
+} 
+
+mark {
+    color: #000000;
+    background: #D3FFA4;
+    padding: 1px 1px 1px 1px;
+}
+
+div.md-toc {
+    font-family: 'HKGrotesk', serif;
+    font-size: 18px; 
+}
+
+#write{
+    max-width: 710px;
+    margin: 0 auto;
+    padding: 20px 30px 40px 30px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 40px;
+}
+
+body > *:first-child {
+    margin-top: 0 !important;
+}
+
+body > *:last-child {
+    margin-bottom: 0 !important;
+}
+
+a {
+    color: #DD4C4F;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: subpixel-antialiased;
+    /*-webkit-text-stroke: 0.45px;
+    // or*/
+    -webkit-text-stroke: 0.55px rgba(221, 76, 79, 0.97);
+}
 h1,
-.h1,
-.f1 {
-	font-size: 2rem;
-	line-height: 2.5rem;
-}
 h2,
-.h2,
-.f2 {
-	font-size: 1.5rem;
-	line-height: 2rem;
-}
 h3,
-.h3,
-.f3 {
-	font-size: 1.25rem;
-	line-height: 1.5rem;
-}
-p,
-.p,
-.f4,
 h4,
 h5,
-h6,
-dl,
-ol,
-ul,
-pre[cid],
-div[cid],
-#typora-source {
-	font-size: 1.125rem;
-	line-height: 1.5rem;
+h6 {
+    font-family: "HKGrotesk",sans-serif;
+    font-weight: bold;
+    letter-spacing: -0.45px; 
+    word-spacing: 0.5px;
+    position: relative;
+    cursor: text;
 }
 
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    /*background: url("file:///C://Users//SmallBamboo//AppData//Roaming//images/modules/styleguide/para.png") no-repeat 10px center;*/
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+
+h1 {
+    font-size: 2.4em;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: .3em;
+    line-height: 1.2;
+    letter-spacing: -0.45px; 
+    word-spacing: 0.5px;
+}
+h2 {
+    font-size: 1.8em;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: .3em;
+    line-height: 1.2;
+    letter-spacing: -0.45px; 
+    word-spacing: 0.5px;
+}
+h3 {
+    font-size: 1.5em;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: .3em;
+    line-height: 1.2;
+    letter-spacing: -0.45px; 
+    word-spacing: 0.5px;
+}
 h4 {
-	font-size: 1.13rem;
-}
-/*
- Pixyll
- A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff.
- Best served with BASSCSS (http://jxnblk.github.io/basscss)
- Crafted with <3 by John Otander (@4lpine) - ©2015 John Otander MIT License http://opensource.org/licenses/MIT
-
-*/
-
-body {
-	font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman", "STSong", 'Segoe UI Emoji', Serif;
-	line-height: 1.5rem;
-	font-weight: 400;
-}
-
-#write {
-	max-width: 914px;
-	color: #333;
+    font-size: 1.2em;
+    line-height: 1.2;
+    padding-bottom: .3em;
+    letter-spacing: -0.45px; 
+    word-spacing: 0.5px;}
+h5 {
+    font-size: 1.1em;
+    line-height: 1.2;
+    padding-bottom: .3em;
+    letter-spacing: -0.45px; 
+    word-spacing: 0.5px;}
+h6 {
+    font-size: 1.0em;
+    line-height: 1.2;
+    padding-bottom: .3em;
+    letter-spacing: -0.45px; 
+    word-spacing: 0.5px;
 }
 
-@media only screen and (min-width: 1400px) {
-	#write {
-		max-width: 1100px;
-	}
+
+  h1 { color: #303336;}
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 { color: #303336;}
+
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    list-style-type: disc 
+    margin: 0.8em 0;
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+}
+hr {
+    height: 4px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #FFFFFF;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+    border-bottom: 1px solid #ddd;
 }
 
-@media only screen and (min-width: 1700px) {
-	#write {
-		max-width: 1200px;
-	}
+body > h2:first-child {
+    margin-top: 0;
+    padding-top: 0;
 }
-
-img {
-	width: auto;
-	max-width: 100%;
+body > h1:first-child {
+    margin-top: 0;
+    padding-top: 0;
 }
-body {
-	font-size: 1.5rem;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
+body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0;
 }
-
-.ty-table-edit {
-	background: #ededed;
+body > h3:first-child,
+body > h4:first-child,
+body > h5:first-child,
+body > h6:first-child {
+    margin-top: 0;
+    padding-top: 0;
 }
-
+a:first-child h1,
+a:first-child h2,
+a:first-child h3,
+a:first-child h4,
+a:first-child h5,
+a:first-child h6 {
+    margin-top: 0;
+    padding-top: 0;
+}
+h1 p,
+h2 p,
+h3 p,
+h4 p,
+h5 p,
+h6 p {
+    margin-top: 0;
+}
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    color: #26344A;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: subpixel-antialiased;
+    /*-webkit-text-stroke: 0.45px;
+    // or*/
+    -webkit-text-stroke: 0.45px rgba(38, 52, 74, 0.97);
+    border-left: 3.5px solid #DD4C4F;
+    margin-left: -1em;
+    padding: 0.2em 1em;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
 table {
-	width: 100%;
-	font-size: 1.125rem;
+    padding: 0;
+    word-break: initial;
 }
-table > thead > tr > th,
-table > thead > tr > td,
-table > tbody > tr > th,
-table > tbody > tr > td,
-table > tfoot > tr > th,
-table > tfoot > tr > td {
-	padding: 12px;
-	line-height: 1.2;
-	vertical-align: top;
-	border-top: 1px solid #333;
+table tr {
+    border-top: 1px solid #cccccc;
+    margin: 0;
+    padding: 0;
 }
-table > thead > tr > th {
-	vertical-align: bottom;
-	border-bottom: 2px solid #333;
+table tr:nth-child(2n) {
+    background-color: #f8f8f8;
 }
-table > caption + thead > tr:first-child > th,
-table > caption + thead > tr:first-child > td,
-table > colgroup + thead > tr:first-child > th,
-table > colgroup + thead > tr:first-child > td,
-table > thead:first-child > tr:first-child > th,
-table > thead:first-child > tr:first-child > td {
-	border-top: 0;
+table tr th {
+    font-weight: bold;
+    border: 1px solid #cccccc;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
 }
-table > tbody + tbody {
-	border-top: 2px solid #333;
+table tr td {
+    border: 1px solid #cccccc;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
 }
-p {
-	font-weight: 300;
-	line-height: 1.5;
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
 }
-abbr {
-	border-bottom: 1px black dotted;
-	cursor: help;
-}
-pre,
-code {
-	font-family: Menlo, Monaco, "Courier New", monospace;
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
 }
 
+.CodeMirror-gutters {
+    border-right: 1px solid #ddd;
+}
+
+.md-fences,
 code,
-.md-fences  {
-	color: #7a7a7a;
+tt {
+    border: 1px solid #ddd;
+    background: #f8f8f8;
+    padding: 0;
+    font-family: 'OfficeCodePro', monospace;
+    padding: 2px 4px 0px 4px;
+    font-size: 17px;
 }
 
 .md-fences {
-	padding: 1.125em;
-	margin-bottom: 0.88em;
-	font-size: 1rem;
-	border: 1px solid #7a7a7a;
-	padding-bottom: 0.5rem;
-	padding-top: 0.5rem;
+    font-family: 'OfficeCodePro', monospace;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 0.2em 1em;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+.task-list{
+    padding-left: 0;
 }
 
-blockquote {
-	padding: 1.33em;
-	font-style: italic;
-	border-left: 5px solid #7a7a7a;
-	color: #555;
-}
-blockquote em {
-	color: #000;
-}
-blockquote footer {
-	font-size: .85rem;
-	font-style: normal;
-	background-color: #fff;
-	color: #7a7a7a;
-	border-color: transparent;
-}
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-	font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;
-	font-weight: bold;
-	line-height: 1.2;
-	margin: 1em 0 0.5em;
-}
-@media screen and (min-width: 48em) {
-	.h1,
-	h1 {
-		font-size: 3.250rem;
-	}
-	.h2,
-	h2 {
-		font-size: 2.298rem;
-	}
-	.h3,
-	h3 {
-		font-size: 1.625rem;
-	}
-	.h4,
-	h4 {
-		font-size: 1.3rem;
-	}
-	#write>h4.md-focus:before,
-	#write>h5.md-focus:before,
-	#write>h6.md-focus:before{
-		top: 1px;
-	}
-	.p,
-	p,
-	li {
-		font-size: 1.25rem;
-		line-height: 1.8;
-	}
-	table {
-		font-size: 1.25rem;
-	}
-}
-@media (max-width: 48em) {
-	blockquote {
-		margin-left: 1rem;
-		margin-right: 0;
-		padding: 0.5em;
-	}
-	.h1,
-	h1 {
-		font-size: 2.827rem;
-	}
-	.h2,
-	h2 {
-		font-size: 1.999rem;
-	}
-	.h3,
-	h3 {
-		font-size: 1.413rem;
-	}
-	.h4,
-	h4 {
-		font-size: 1.3rem;
-	}
-}
-@media screen and (min-width: 64em) {
-	.h1,
-	h1 {
-		font-size: 4.498rem;
-	}
-	.h2,
-	h2 {
-		font-size: 2.29rem;
-	}
-	.h3,
-	h3 {
-		font-size: 1.9rem;
-	}
-	.h4,
-	h4 {
-		font-size: 1.591rem;
-	}
-	#write>h4.md-focus:before{
-		top:4px;
-	}
-}
-a {
-	color: #463F5C;
-	text-decoration: underline;
+.task-list-item {
+    padding-left:32px;
 }
 
-#write {
-	padding-top: 2rem;
+.task-list-item input {
+  top: 3px;
+  left: 8px;
 }
 
+@media screen and (min-width: 914px) {
+    /*body {
+        width: 854px;
+        margin: 0 auto;
+    }*/
+}
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+    background-color: #E5E7EA;
+}
 #write pre.md-meta-block {
-	min-height: 35px;
-	padding: 0.5em 1em;
-	white-space: pre;
-	border: 0px;
+    padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
 
-	border-left: 30px #f8f8f8 solid;
-	border-right: 30px #f8f8f8 solid;
-	width: 100vw;
-	max-width: calc(100% + 60px);
+.mathjax-block>.code-tooltip {
+    bottom: .375rem;
+}
 
-	margin-left: -30px;
-	margin-bottom: 2em;
-	margin-top: -2010px;
-	padding-top: 2000px;
-	padding-bottom: 10px;
-	line-height: 1.5em;
-	color: #7a7a7a;
-	background-color: #fafafa;
-	font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
-	font-weight: 300;
-	clear: both;
-	padding-left: 0;
-	font-size:1.125rem;
+#write>h3.md-focus:before{
+    left: -1.5625rem;
+    top: .375rem;
+}
+#write>h4.md-focus:before{
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+#write>h5.md-focus:before{
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+#write>h6.md-focus:before{
+    left: -1.5625rem;
+    top: .285714286rem;
 }
 .md-image>.md-meta {
-	color: #463F5C
-}
-.footnotes {
-	font-size:1.1rem;
-}
-.md-tag {
-	font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
-}
-.code-tooltip {
-	background: white;
-}
-.code-tooltip-content {
-	font-size: 1.1rem;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
 }
 
-.task-list{
-	padding-left: 0;
+.md-tag{
+    color: inherit;
 }
 
-.md-task-list-item {
-	padding-left:34px;
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
 }
 
-.md-task-list-item > input{
-	width: 1.25rem;
-	height: 1.25rem;
-	display: block;
-	-webkit-appearance: initial;
-	top: -0.2rem;
-	margin-left: -1.6em;
-	margin-top: calc(1rem - 7px);
-	border: none;
+.sidebar-tabs {
+    border-bottom: none;
 }
 
-.md-task-list-item > input:focus{
-	outline: none;
-	box-shadow: none;
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
 }
 
-.md-task-list-item > input:before{
-	border: 1px solid #555;
-	border-radius: 1.5rem;
-	width: 1.5rem;
-	height: 1.5rem;
-	background: #fff;
-	content: ' ';
-	transition: background-color 200ms ease-in-out;
-	display: block;
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
 }
 
-.md-task-list-item > input:checked:before,
-.md-task-list-item > input[checked]:before{
-	background: #333;
-	border-width: 2px;
-	display:inline-block;
-	transition: background-color 200ms ease-in-out;
+#md-notification:before {
+    top: 10px;
 }
 
-.md-task-list-item > input:checked:after,
-.md-task-list-item > input[checked]:after {
-	opacity: 1;
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
 }
 
-.md-task-list-item > input:after {
-	opacity: 1;
-	-webkit-transition: opacity 0.05s ease-in-out;
-	-moz-transition: opacity 0.05s ease-in-out;
-	transition: opacity 0.05s ease-in-out;
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-	position: absolute;
-	top: 0.4375rem;
-	left: 0.28125rem;
-	width: 0.9375rem;
-	height: 0.5rem;
-	border: 3px solid #fff;
-	border-top: 0;
-	border-right: 0;
-	content: ' ';
-	opacity: 0;
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Lyon Display", sans-serif;
 }
 
-.md-tag {
-	color:inherit;
+.CodeMirror {
+    /* Set height, width, borders, and global font properties here */
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: subpixel-antialiased;
+    /*-webkit-text-stroke: 0.45px;
+    // or*/
+    font-family: 'OfficeCodePro', monospace;
+    font-size: 1.000em;
 }
 
-.md-toc:focus .md-toc-content{
-	margin-top: 19px;
-}
 
-#typora-sidebar {
-	font-size:1rem !important;
-}
 
-.html-for-mac #typora-sidebar {
-	background-color:white;
-}
-
-.outline-content li, .outline-content ul {
-	font-size:1rem !important;
-}
-
-.outline-title {
-	line-height: inherit;
-	margin-top: 10px;
-}
-
-.outline-expander {
-	width: 18px;
-}
-
-.outline-expander:before {
- 	content: "+";
-	font-family: inherit;
-	color: rgb(108, 108, 108); 
-  font-size: 1.5rem;
- 	top: -0.1rem;
-}
-
-.outline-expander:hover:before {
-	content: "+";
-}
-
-.outline-item-open>.outline-item>.outline-expander:before{
-	content: "-";
-}
-
-/** source code mode */
-#typora-source {
-	font-family: Courier, monospace;
-    color: #6A6A6A;
-}
-
-.os-windows #typora-source {
-	font-family: inherit;
-}
-
-.cm-s-typora-default .cm-header, 
-.cm-s-typora-default .cm-property,
-.CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
-	color: #428bca;
-}
-
-.cm-s-typora-default .cm-atom, .cm-s-typora-default .cm-number {
-	color: #777777;
-}
-
-.md-diagram-panel {
-	margin-top: 24px;
-	margin-left: -1.2em;
-}
-
-.md-mathjax-midline {
-	background: #fafafa;
-}
-
-.enable-diagrams pre.md-fences[lang="sequence"] .code-tooltip,
-.enable-diagrams pre.md-fences[lang="flow"] .code-tooltip,
-.enable-diagrams pre.md-fences[lang="mermaid"] .code-tooltip {
-    bottom: -3.4em;
-}
-
-.dropdown-menu .divider {
-	border-color: #e5e5e5;
-}
 
 
 </style><title>竹MC的博客</title>
 </head>
 <body class='typora-export os-windows'><div class='typora-export-content'>
-<div id='write'  class=''><h1 id='竹mc的博客'><span>竹MC的博客</span><br><span>本站域名bamboomc.cn将在2025年07月27日到期后不再续费，您现在访问的是勉强在运行的备份页，所有备份文件请访问https://github.com/SmallBambooCode/bamboomcblog-saved/</span></h1><h2 id='首页'><span>首页</span></h2><h3 id='以下是保留的文章与页面的链接'><span>以下是保留的文章与页面的链接：</span></h3><h4 id='教程目录'><a href='/help-online'><span>教程目录</span></a></h4><h4 id='群文件下载中心'><a href='/download'><span>群文件下载中心</span></a></h4><h4 id='网站地图'><a href='/sitemap.html'><span>网站地图</span></a></h4><h4 id='友情链接'><a href='/links'><span>友情链接</span></a></h4><h4 id='开往友链接力）'><a href='https://www.travellings.cn/go.html'><span>开往（友链接力）</span></a></h4><p>&nbsp;</p><h2 id='关站通知'><span>关站通知</span></h2><p><span>尊敬的竹MC的博客读者们，</span></p><p><span>我谨代表竹MC的博客向大家致以最诚挚的感谢与问候。时光荏苒，我们的博客已陪伴大家走过了许多美好的时光（截至关闭时博客已运行929天）。然而，基于一系列考虑，我们不得不做出一个重要的决定：竹MC的博客将于2023年8月7日关闭，并转换为由typora生成的静态页面。</span></p><p><span>这个决定并不是轻率的，它涉及到我们面临的多种挑战，包括资金限制和网站流量问题。在这个过程中，我们认真考虑了多种解决方案，并认为将博客转换为静态页面是目前最为合适的选择。这一举措不仅有助于降低网站维护成本，也能提供更稳定和快速的用户体验。</span></p><p><span>请放心，虽然我们关闭了大部分页面，但我们将保留所有重要的文章和页面，以确保您可以继续访问和查阅这些有价值的内容。这些文章将作为静态页面的一部分，继续为大家提供有用的信息。</span></p><p><span>同时，我们也明白这对一些忠实读者可能是一个不便，对此我们深表歉意。如果您有保存自己喜欢的文章的需求，请在</span><a href='/saved.zip'><span>bamboomc.cn/saved.zip</span></a><span>下载所有文章、页面和图片（由WordPress导出工具生成+COS对象存储导出）。</span></p><p><span>此外，我们想对所有支持竹MC的博客的读者们说声谢谢。您的支持是我们前进的动力，也是我们坚持追求博客内容质量的源泉。尽管博客将以不同的形式存在，但我们团队将继续分享有趣、有见地的内容，与您保持紧密的交流。</span></p><p><span>感谢您长久以来对竹MC的博客的支持与理解。如果您对关闭后的新静态页面有任何疑问或建议，欢迎随时联系我们，我们会尽力解答您的问题。</span></p><p><span>衷心感谢您的陪伴！</span></p><p><span>竹MC 敬上</span></p><p>&nbsp;</p><h2 id='截图留念'><span>截图留念</span></h2><p><img src="./截图1.webp" referrerpolicy="no-referrer" alt="截图1"></p><p><img src="./截图2.webp" referrerpolicy="no-referrer" alt="截图2"></p></div></div>
+<div id='write'  class=''><h1 id='竹mc的博客'><span>竹MC的博客</span></h1><p><span>域名bamboomc.cn已在2025年07月27日到期，您现在访问的是GitHub Pages备份页，如需查看所有备份文件请访问 </span><a href='https://github.com/SmallBambooCode/bamboomcblog-saved'><span>https://github.com/SmallBambooCode/bamboomcblog-saved</span></a><span>。</span></p><h2 id='首页'><span>首页</span></h2><h3 id='以下是保留的文章与页面的链接'><span>以下是保留的文章与页面的链接：</span></h3><h4 id='教程目录'><a href='https://bamboomc.cn/help-online'><span>教程目录</span></a></h4><h4 id='群文件下载中心'><a href='https://bamboomc.cn/download'><span>群文件下载中心</span></a></h4><h4 id='网站地图'><a href='https://bamboomc.cn/sitemap.html'><span>网站地图</span></a></h4><h4 id='友情链接'><a href='https://bamboomc.cn/links'><span>友情链接</span></a></h4><h4 id='开往友链接力）'><a href='https://www.travellings.cn/go.html'><span>开往（友链接力）</span></a></h4><p>&nbsp;</p><h2 id='关站通知'><span>关站通知</span></h2><p><span>尊敬的竹MC的博客读者们，</span></p><p><span>我谨代表竹MC的博客向大家致以最诚挚的感谢与问候。时光荏苒，我们的博客已陪伴大家走过了许多美好的时光（截至关闭时博客已运行929天）。然而，基于一系列考虑，我们不得不做出一个重要的决定：竹MC的博客将于2023年8月7日关闭，并转换为由typora生成的静态页面。</span></p><p><span>这个决定并不是轻率的，它涉及到我们面临的多种挑战，包括资金限制和网站流量问题。在这个过程中，我们认真考虑了多种解决方案，并认为将博客转换为静态页面是目前最为合适的选择。这一举措不仅有助于降低网站维护成本，也能提供更稳定和快速的用户体验。</span></p><p><span>请放心，虽然我们关闭了大部分页面，但我们将保留所有重要的文章和页面，以确保您可以继续访问和查阅这些有价值的内容。这些文章将作为静态页面的一部分，继续为大家提供有用的信息。</span></p><p><span>同时，我们也明白这对一些忠实读者可能是一个不便，对此我们深表歉意。如果您有保存自己喜欢的文章的需求，请在</span><a href='https://bamboomc.cn/saved.zip'><span>bamboomc.cn/saved.zip</span></a><span>下载所有文章、页面和图片（由WordPress导出工具生成+COS对象存储导出）。</span></p><p><span>此外，我们想对所有支持竹MC的博客的读者们说声谢谢。您的支持是我们前进的动力，也是我们坚持追求博客内容质量的源泉。尽管博客将以不同的形式存在，但我们团队将继续分享有趣、有见地的内容，与您保持紧密的交流。</span></p><p><span>感谢您长久以来对竹MC的博客的支持与理解。如果您对关闭后的新静态页面有任何疑问或建议，欢迎随时联系我们，我们会尽力解答您的问题。</span></p><p><span>衷心感谢您的陪伴！</span></p><p><span>竹MC 敬上</span></p><p>&nbsp;</p><h2 id='截图留念'><span>截图留念</span></h2><p><img src="/截图1.webp" referrerpolicy="no-referrer" alt="截图1"></p><p><img src="/截图2.webp" referrerpolicy="no-referrer" alt="截图2"></p></div></div>
 </body>
 </html>
-
