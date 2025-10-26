@@ -1,5 +1,7 @@
 # 竹MC的博客
 
+域名bamboomc.cn已在2025年07月27日到期，您现在访问的是GitHub Pages备份页，如需查看所有备份文件请访问 [https://github.com/SmallBambooCode/bamboomcblog-saved](https://github.com/SmallBambooCode/bamboomcblog-saved)。
+
 ## 首页
 
 ### 以下是保留的文章与页面的链接：
@@ -41,5 +43,6 @@
 ## 截图留念
 
 ![截图1](./截图1.webp)
+
 
 ![截图2](./截图2.webp)
